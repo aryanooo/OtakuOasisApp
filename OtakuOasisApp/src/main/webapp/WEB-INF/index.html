@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OtakuOasis</title>
+    <!-- Link to external CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <!-- Logo container -->
+        <div id="logo-container">
+            <!-- Logo image -->
+            <a id="home" href="C:\Users\MSI1\front-end\index.html">
+            <img src="C:/Users/MSI1/OneDrive/Pictures/OtakuOasis logo.png" alt="OtakuOasis.logo">
+            </a>
+        </div>
+        <!-- Home link -->
+        <a id="home" href="C:\Users\MSI1\front-end\index.html">
+            <p id="loadHomePage">OtakuOasis</p>
+        </a>
+        <!-- Navigation links -->
+        <a href="">
+            <p class="buttonInHeader">Home</p>
+        </a>
+        <a href="">
+            <p class="buttonInHeader">Browse</p>
+        </a>
+        <!-- Profile image button -->
+        <button onclick="check()" id="profileImg">
+            <div id="pic-container">
+                <a href="C:\Users\MSI1\front-end\login-page.html">
+                    <img src="C:/Users/MSI1/OneDrive/Pictures/deafult-pic.webp" alt="default-pic.img">
+                </a>
+            </div>
+        </button>
+        <!-- SVG button with dropdown menu -->
+        <button class="svg-button" id="drop-btn" title="button" onclick="toggleDropdown()">
+            <!-- SVG icon inside button -->
+            <svg width="23" height="23" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11.5" cy="11.5" r="10" stroke="black" stroke-width="1" fill="rgb(255, 177, 200)" />
+                <polygon id="lol" points="6,8 17,8 11.5,17.5" fill="transparent" stroke="black" stroke-width="1"/>
+            </svg>
+            <!-- Dropdown menu content -->
+            <div class="drop-down">
+                <a href=""><p>Profile</p></a>
+                <a href=""><p>Settings</p></a>
+                <a href=""><p>MyList</p></a>
+                <a href=""><p>LogOut</p></a>
+            </div>
+        </button>
+    </header>
+    
+    <!-- Main content -->
+    <div class="parent">
+        <!-- Child 1 with delete button -->
+        <div class="child1" id="no1">
+            <button onclick="mydelete('no1')">Delete</button>
+        </div>
+        <!-- Child 2 with delete button -->
+        <div class="child2" id="no2">
+            <button onclick="mydelete('no2')">Delete</button>
+        </div>
+    </div>
+
+    <!-- JavaScript functions -->
+    <script src="C:\Users\MSI1\front-end\index.js"></script>
+</body>
+</html>
